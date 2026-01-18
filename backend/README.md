@@ -59,7 +59,7 @@ A FastAPI-based backend service for generating interactive quizzes from Wikipedi
    ```
 
 2. **Access the API documentation**:
-   Open your browser and go to `http://localhost:8000/docs` for interactive Swagger UI documentation.
+   Open your browser and go to `https://deepklairty-assignment-quiz-generator.onrender.com/docs` for interactive Swagger UI documentation.
 
 ## API Endpoints
 

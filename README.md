@@ -79,20 +79,20 @@
 > ```bash
 > uvicorn main:app --reload
 > ```
-> API: http://localhost:8000  
-> Docs: http://localhost:8000/docs
+> API: https://deepklairty-assignment-quiz-generator.onrender.com/API  
+> Docs: https://deepklairty-assignment-quiz-generator.onrender.com/docs
 >
 > **Frontend**
 > ```bash
 > npm run dev
 > ```
-> App: http://localhost:5173
+> App: https://deepklairty-assignment-quiz-generat.vercel.app/
 >
 > ---
 >
 > ## 🧪 How to Use
 >
-> 1. Open http://localhost:5173  
+> 1. Open https://deepklairty-assignment-quiz-generat.vercel.app/
 > 2. Enter a Wikipedia URL  
 > 3. Click **Generate Quiz**  
 > 4. Answer questions and submit  

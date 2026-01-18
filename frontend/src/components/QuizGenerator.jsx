@@ -44,10 +44,8 @@ const QuizGenerator = () => {
         setLoadingStep('Generating quiz with AI...');
       }, 2000);
 
-      const response = await api.post(
-        'http://127.0.0.1:8000/api/generate',
-        { url }
-      );
+      const response = await api.post('/generate', { url });
+
 
       clearTimeout(progressTimer);
       setLoadingStep('');

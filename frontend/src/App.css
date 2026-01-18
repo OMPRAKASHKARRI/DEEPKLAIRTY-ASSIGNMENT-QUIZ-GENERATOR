@@ -1,0 +1,297 @@
+/* =========================
+   GLOBAL APP LAYOUT
+========================= */
+.app {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+/* =========================
+   HEADER
+========================= */
+.app-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.app-header h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #e0e7ff;
+  margin-top: 0.6rem;
+}
+
+/* =========================
+   TABS (Generate / History)
+========================= */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.tabs button {
+  padding: 0.85rem 1.8rem;
+  border-radius: 14px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.tabs button:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.tabs button.active {
+  background: white;
+  color: #4f46e5;
+}
+
+/* =========================
+   CARD (COMMON)
+========================= */
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 2.2rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.18);
+}
+
+/* =========================
+   GENERATE QUIZ FORM
+========================= */
+form {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+input[type="url"] {
+  flex: 1;
+  padding: 0.9rem 1.1rem;
+  border-radius: 14px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.9rem 1.6rem;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(to right, #6366f1, #8b5cf6);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================
+   LOADING & ERROR
+========================= */
+.loading {
+  margin-top: 1rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.error {
+  margin-top: 1rem;
+  color: #dc2626;
+  font-weight: 500;
+}
+
+/* =========================
+   QUIZ CONTAINER
+========================= */
+.quiz-container {
+  margin-top: 2rem;
+}
+
+.quiz-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.quiz-summary {
+  color: #4b5563;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* =========================
+   QUESTIONS
+========================= */
+.question-block {
+  margin-bottom: 2.2rem;
+  padding-bottom: 1.8rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.question-block h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* =========================
+   OPTIONS
+========================= */
+.option {
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 0.8rem;
+  border-radius: 14px;
+  background: #f3f4f6;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.option:hover {
+  background: #eef2ff;
+  border-color: #6366f1;
+}
+
+.option.correct {
+  background: #dcfce7;
+  border-color: #22c55e;
+}
+
+.option.wrong {
+  background: #fee2e2;
+  border-color: #ef4444;
+}
+/* SELECTED OPTION (before submit) */
+.option.selected {
+  background: #e0e7ff;
+  border-color: #6366f1;
+  font-weight: 600;
+}
+
+
+/* =========================
+   SUBMIT / SCORE
+========================= */
+.submit-area {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.submit-btn {
+  background: linear-gradient(to right, #22c55e, #16a34a);
+  color: white;
+  padding: 0.95rem 2.4rem;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.submit-btn:hover {
+  box-shadow: 0 12px 30px rgba(34, 197, 94, 0.45);
+}
+
+.score-box {
+  margin-bottom: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #166534;
+}
+
+/* =========================
+   HISTORY TABLE
+========================= */
+.history-card {
+  margin-top: 2rem;
+}
+
+.history-title {
+  font-size: 2rem;
+  margin-bottom: 1.8rem;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 1.2rem;
+}
+
+.history-table th {
+  text-align: left;
+  padding: 0.8rem 1rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.history-table tr {
+  background: #f9fafb;
+  border-radius: 16px;
+}
+
+.history-table td {
+  padding: 1.1rem;
+  vertical-align: top;
+}
+
+.topic-cell a {
+  font-weight: 700;
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.topic-cell a:hover {
+  text-decoration: underline;
+}
+
+.summary-cell {
+  max-width: 420px;
+  color: #374151;
+}
+
+.count-cell {
+  font-weight: 600;
+  text-align: center;
+}
+
+/* =========================
+   DETAILS BUTTON
+========================= */
+.details-btn {
+  background: linear-gradient(to right, #6366f1, #8b5cf6);
+  color: white;
+  border: none;
+  padding: 0.65rem 1.4rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.details-btn:hover {
+  box-shadow: 0 8px 22px rgba(99, 102, 241, 0.45);
+}

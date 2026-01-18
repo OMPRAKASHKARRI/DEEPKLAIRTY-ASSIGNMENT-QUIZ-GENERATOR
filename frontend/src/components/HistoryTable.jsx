@@ -22,9 +22,15 @@ const HistoryTable = () => {
     }
   };
 
-  const openDetails = (quiz) => {
-    setSelectedQuiz(quiz);
-  };
+  const openDetails = async (quiz) => {
+  try {
+    const response = await api.get(`/history/${quiz.id}`);
+    setSelectedQuiz(response.data);
+  } catch (err) {
+    console.error("Failed to load quiz details", err);
+    alert("Failed to load quiz details");
+  }
+};
 
   if (loading) return <p className="loading">Loading history...</p>;
 

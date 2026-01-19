@@ -1,4 +1,5 @@
-> # Quiz App
+[neural networks json output.json](https://github.com/user-attachments/files/24699554/neural.networks.json.output.json)[ai json output.json](https://github.com/user-attachments/files/24699540/ai.json.output.json)> 
+## AI WIKI QUIZ GENERATOR
 >
 > **A full-stack web application that generates interactive quizzes from Wikipedia articles using AI-powered content analysis.**  
 > Built with a **FastAPI backend** and a **React frontend**.
@@ -32,10 +33,7 @@
 
 >
 >## 🧪 Sample Data
-
-A `sample_data/` folder is included to demonstrate testing and API outputs.
-
-Contents:
+>Contents:
 sample_data/
 ├── wikipedia_urls.txt
 ├── api_response_example_1.json
@@ -44,8 +42,277 @@ sample_data/
 > https://en.wikipedia.org/wiki/Artificial_intelligence
 > https://en.wikipedia.org/wiki/Machine_learning
 > https://en.wikipedia.org/wiki/Neural_network
- The JSON files contain actual API responses returned by the quiz generation endpoint, showing quiz structure, questions, options, answers, and related topics.
 
+A `sample_data/` folder is included to demonstrate testing and API outputs.
+<img width="1708" height="859" alt="Screenshot 2026-01-19 061104" src="https://github.com/user-attachments/assets/4e5ebee0-0fbb-4075-ae81-4b07e8ed3380" />
+And the Json Folder contains Api outputs of tested links and Api history
+neural networks json output.js{
+  "id": 15,
+  "url": "https://en.wikipedia.org/wiki/Neural_network",
+  "title": "Neural network",
+  "summary": "In biology\nIn machine learning\nHistory\nSee also\nReferences\n\nA neural network is a group of interconnected units called neurons that send signals to one another. Neurons can be either biological cells or mathematical models. While individual neurons are simple, many of them together in a network can perform complex tasks. Neurons in an artificial neural network are usually arranged into layers, with information passing from the first layer (the input layer) through one or more intermediate layers",
+  "key_entities": {
+    "people": [
+      "Frank Rosenblatt",
+      "Alexander Bain",
+      "Walter Pitts",
+      "Donald Hebb",
+      "Horizontal Cells"
+    ],
+    "organizations": [],
+    "locations": [
+      "Populations",
+      "While",
+      "Walter Pitts",
+      "However",
+      "There"
+    ]
+  },
+  "sections": [],
+  "quiz": [
+    {
+      "question": "Who or what is In?",
+      "options": [
+        "In biology In machine learning History See also References A neural network",
+        "A fictional character",
+        "A place or location",
+        "An unrelated topic"
+      ],
+      "answer": "In biology In machine learning History See also References A neural network",
+      "difficulty": "easy",
+      "explanation": "This is explained in the introduction of the article."
+    },
+    {
+      "question": "When did an important event related to this topic occur?",
+      "options": [
+        "In 1949",
+        "In 1969",
+        "In 1929",
+        "The date is not mentioned"
+      ],
+      "answer": "In 1949",
+      "difficulty": "medium",
+      "explanation": "The year 1949 is mentioned in the article as significant."
+    },
+    {
+      "question": "Who is Frank Rosenblatt?",
+      "options": [
+        "A person mentioned in the article",
+        "A fictional character",
+        "A place name",
+        "An organization"
+      ],
+      "answer": "A person mentioned in the article",
+      "difficulty": "medium",
+      "explanation": "Frank Rosenblatt is discussed in the article."
+    },
+    {
+      "question": "What is a key detail or concept discussed in this article?",
+      "options": [
+        "[1] Populations of interconnected neurons that are smaller than neural",
+        "A minor detail not mentioned",
+        "An unrelated concept",
+        "Information not in the article"
+      ],
+      "answer": "[1] Populations of interconnected neurons that are smaller than neural",
+      "difficulty": "hard",
+      "explanation": "This concept is discussed in detail in the article."
+    },
+    {
+      "question": "What additional information is provided in this article?",
+      "options": [
+        "Neurons in an artificial neural network are usually arranged into",
+        "Information not mentioned",
+        "Unrelated facts",
+        "Speculative content"
+      ],
+      "answer": "Neurons in an artificial neural network are usually arranged into",
+      "difficulty": "medium",
+      "explanation": "This information is provided in the article."
+    }
+  ],
+  "related_topics": []
+}
+[ai json output.json](https://github.com/user-attachments/files/24699568/ai.json.output.json){
+  "id": 13,
+  "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+  "title": "Artificial intelligence",
+  "summary": "Goals\nReasoning and problem-solving\nKnowledge representation\nPlanning and decision-making\nLearning\nNatural language processing\nPerception\nSocial intelligence\nGeneral intelligence\nTechniques\nSearch and optimization\nLogic\nProbabilistic methods for uncertain reasoning\nClassifiers and statistical learning methods\nArtificial neural networks\nDeep learning\nGPT\nHardware and software\nApplications\nHealth and medicine\nGames\nMathematics\nFinance\nMilitary\nGenerative AI\nAgents\nWeb search\nSexuality\nOther indust",
+  "key_entities": {
+    "people": [
+      "Brian Christian",
+      "Herbert Simon",
+      "Marvin Minsky",
+      "Lisp Machine",
+      "Moritz Hardt"
+    ],
+    "organizations": [],
+    "locations": [
+      "Inference",
+      "Ys",
+      "Marvin Minsky",
+      "Unsupervised",
+      "Additionally"
+    ]
+  },
+  "sections": [],
+  "quiz": [
+    {
+      "question": "Who or what is Goals\nReasoning?",
+      "options": [
+        "Goals Reasoning and problem-solving Knowledge representation Planning and dec...",
+        "A fictional character",
+        "A place or location",
+        "An unrelated topic"
+      ],
+      "answer": "Goals Reasoning and problem-solving Knowledge representation Planning and dec...",
+      "difficulty": "easy",
+      "explanation": "This is explained in the introduction of the article."
+    },
+    {
+      "question": "When did an important event related to this topic occur?",
+      "options": [
+        "In 1956",
+        "In 1976",
+        "In 1936",
+        "The date is not mentioned"
+      ],
+      "answer": "In 1956",
+      "difficulty": "medium",
+      "explanation": "The year 1956 is mentioned in the article as significant."
+    },
+    {
+      "question": "Who is Brian Christian?",
+      "options": [
+        "A person mentioned in the article",
+        "A fictional character",
+        "A place name",
+        "An organization"
+      ],
+      "answer": "A person mentioned in the article",
+      "difficulty": "medium",
+      "explanation": "Brian Christian is discussed in the article."
+    },
+    {
+      "question": "What is a key detail or concept discussed in this article?",
+      "options": [
+        "[162][164][165][166] Generative artificial intelligence (Generative...",
+        "A minor detail not mentioned",
+        "An unrelated concept",
+        "Information not in the article"
+      ],
+      "answer": "[162][164][165][166] Generative artificial intelligence (Generative...",
+      "difficulty": "hard",
+      "explanation": "This concept is discussed in detail in the article."
+    },
+    {
+      "question": "What additional information is provided in this article?",
+      "options": [
+        "The AI learned that users tended to choose misinformation, conspiracy",
+        "Information not mentioned",
+        "Unrelated facts",
+        "Speculative content"
+      ],
+      "answer": "The AI learned that users tended to choose misinformation, conspiracy",
+      "difficulty": "medium",
+      "explanation": "This information is provided in the article."
+    }
+  ],
+  "related_topics": []
+}
+[machine larning json output.json](https://github.com/user-attachments/files/24699594/machine.larning.json.output.json){
+  "id": 14,
+  "url": "https://en.wikipedia.org/wiki/Machine_learning",
+  "title": "Machine learning",
+  "summary": "History\nRelationships to other fields\nArtificial intelligence\nData compression\nData mining\nGeneralization\nStatistics\nStatistical physics\nTheory\nApproaches\nSupervised learning\nUnsupervised learning\nSemi-supervised learning\nReinforcement learning\nOther types\nModels\nArtificial neural networks\nDecision trees\nRandom forest regression\nSupport-vector machines\nRegression analysis\nBayesian networks\nGaussian processes\nGenetic algorithms\nBelief functions\nRule-based models\nTraining models\nApplications\nLimit",
+  "key_entities": {
+    "people": [
+      "African American",
+      "Fidelity Generative",
+      "Tensor Processing",
+      "Racial Equality",
+      "Microsoft Excel"
+    ],
+    "organizations": [],
+    "locations": [
+      "Cluster",
+      "Different",
+      "African American",
+      "Machine",
+      "the Computing Research Association"
+    ]
+  },
+  "sections": [],
+  "quiz": [
+    {
+      "question": "Who or what is History\nRelationships?",
+      "options": [
+        "History Relationships to other fields Artificial intelligence Data compressio...",
+        "A fictional character",
+        "A place or location",
+        "An unrelated topic"
+      ],
+      "answer": "History Relationships to other fields Artificial intelligence Data compressio...",
+      "difficulty": "easy",
+      "explanation": "This is explained in the introduction of the article."
+    },
+    {
+      "question": "When did an important event related to this topic occur?",
+      "options": [
+        "In 1959",
+        "In 1979",
+        "In 1939",
+        "The date is not mentioned"
+      ],
+      "answer": "In 1959",
+      "difficulty": "medium",
+      "explanation": "The year 1959 is mentioned in the article as significant."
+    },
+    {
+      "question": "Who is African American?",
+      "options": [
+        "A person mentioned in the article",
+        "A fictional character",
+        "A place name",
+        "An organization"
+      ],
+      "answer": "A person mentioned in the article",
+      "difficulty": "medium",
+      "explanation": "African American is discussed in the article."
+    },
+    {
+      "question": "What is a key detail or concept discussed in this article?",
+      "options": [
+        "Due to its generality, the field is studied in many",
+        "A minor detail not mentioned",
+        "An unrelated concept",
+        "Information not in the article"
+      ],
+      "answer": "Due to its generality, the field is studied in many",
+      "difficulty": "hard",
+      "explanation": "This concept is discussed in detail in the article."
+    },
+    {
+      "question": "What additional information is provided in this article?",
+      "options": [
+        "In addition to market basket analysis, association rules are employed",
+        "Information not mentioned",
+        "Unrelated facts",
+        "Speculative content"
+      ],
+      "answer": "In addition to market basket analysis, association rules are employed",
+      "difficulty": "medium",
+      "explanation": "This information is provided in the article."
+    }
+  ],
+  "related_topics": []
+}
+
+
+
+
+> 
+> 
 > ## 🛠 Tech Stack
 >
 > **Backend**
